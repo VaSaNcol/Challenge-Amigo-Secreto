@@ -6,7 +6,7 @@ function agregarAmigo() {
     let nombre = amigoInput.value.trim();
     
     if (nombre === ''){
-        alert ('Por favor, ingresa un nombre válido');
+        alert ('Ingresa un nombre válido');
         return;
     }
 
@@ -26,7 +26,7 @@ function agregarAmigo() {
 function sortearAmigo() {
 
     if(amigos.length === 0) {
-        alert('Primero añade nombres a la lista');
+        alert('Primero agrega nombres a la lista');
         return;
     }
     
@@ -37,7 +37,7 @@ function sortearAmigo() {
     resultadoElement.innerHTML = '';
 
     let resultadoItem = document.createElement('li');
-    resultadoItem.textContent = `¡${amigoSecreto} es tu amigo secreto!`;
+    resultadoItem.textContent = `¡Tu amigo secreto es ${amigoSecreto}!`;
     resultadoItem.classList.add('resultado-destacado');
 
     resultadoElement.appendChild(resultadoItem);
